@@ -46,13 +46,17 @@ Follow these steps to get the Satellite Image Viewer application up and running 
 
 4.  **Set up environment variables:**
 
-    Create a file named `.env` in the root of the project directory and add your NASA API key in the following format:
+    Create a file named `.env` in the root of the project directory.
+
+    You will need a NASA API key to fetch satellite images. You can obtain a free API key by following the instructions on the [NASA API website](https://api.nasa.gov/).
+
+    Once you have your API key, add it to the `.env` file in the following format:
 
     ```
     NASA_API_KEY=your_api_key_here
     ```
 
-    Replace `your_api_key_here` with your actual API key obtained from [NASA API website](https://api.nasa.gov/).
+    Replace `your_api_key_here` with the actual API key you obtained.
 
 5.  **Run the development server:**
 
@@ -67,12 +71,6 @@ Follow these steps to get the Satellite Image Viewer application up and running 
     ```
 
     The application will be available at [http://localhost:3001](http://localhost:3001) in your browser (Note: the port may vary if 3000 is already in use).
-
-Open [http://localhost:3001](http://localhost:3001) with your browser to see the result (Note: port may vary if 3000 is in use).
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
