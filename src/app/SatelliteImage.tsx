@@ -44,7 +44,7 @@ const SatelliteImage = () => {
             type="text" 
             value={longitude} 
             onChange={(e) => setLongitude(e.target.value)} 
-            className="px-2 py-1 border border-gray-300 rounded-md text-black"
+            className="px-2 py-1 border border-gray-300 rounded-md text-white"
           />
         </label>
         <label className="flex flex-col">
@@ -53,7 +53,7 @@ const SatelliteImage = () => {
             type="text" 
             value={latitude} 
             onChange={(e) => setLatitude(e.target.value)} 
-            className="px-2 py-1 border border-gray-300 rounded-md text-black"
+            className="px-2 py-1 border border-gray-300 rounded-md text-white"
           />
         </label>
         <label className="flex flex-col">
@@ -62,7 +62,7 @@ const SatelliteImage = () => {
             type="date" 
             value={date} 
             onChange={(e) => setDate(e.target.value)} 
-            className="px-2 py-1 border border-gray-300 rounded-md text-black"
+            className="px-2 py-1 border border-gray-300 rounded-md text-white"
           />
         </label>
         <button 
