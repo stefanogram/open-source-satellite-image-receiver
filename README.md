@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Satellite Image Viewer
+
+This is a Next.js application that fetches and displays satellite images from NASA's Earth API based on user-provided coordinates and date.
+
+## Features Implemented:
+
+- Fetching satellite imagery using NASA's Earth API.
+- User interface with input fields for longitude, latitude, and date.
+- Displaying the fetched satellite image.
+- Server-side API route for secure API key handling and request logging.
+- Basic UI improvements for input fields, button, and image responsiveness.
 
 ## Getting Started
 
@@ -14,7 +24,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result (Note: port may vary if 3000 is in use).
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
