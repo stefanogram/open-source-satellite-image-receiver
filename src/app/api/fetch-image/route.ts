@@ -19,6 +19,7 @@ export async function GET(request: Request) {
   const lat = searchParams.get('lat');
   const lon = searchParams.get('lon');
   const date = searchParams.get('date');
+  const dim = searchParams.get('dim');
 
   if (!lat || !lon || !date) {
     const errorMessage = 'Missing latitude, longitude, or date parameter';
@@ -26,7 +27,7 @@ export async function GET(request: Request) {
     return new Response(errorMessage, { status: 400 });
   }
 
-  const url = `https://api.nasa.gov/planetary/earth/imagery?lon=${lon}&lat=${lat}&date=${date}&api_key=${NASA_API_KEY}`;
+  const url = `https://api.nasa.gov/planetary/earth/imagery?lon=${lon}&lat=${lat}&date=${date}${dim ? `&dim=${dim}` : ''}&api_key=${NASA_API_KEY}`;
 
   await appendLog(`[${new Date().toISOString()}] Request URL: ${url}`);
   await appendLog(`[${new Date().toISOString()}] API Key: ${NASA_API_KEY ? 'Provided' : 'Undefined'}`); // Log if key is provided or undefined

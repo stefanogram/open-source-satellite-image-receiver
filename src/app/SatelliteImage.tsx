@@ -8,6 +8,7 @@ const SatelliteImage = () => {
   const [longitude, setLongitude] = useState<string>('-74.0060');
   const [latitude, setLatitude] = useState<string>('40.7128');
   const [date, setDate] = useState<string>('2023-01-01');
+  const [dim, setDim] = useState<string>('0.2');
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleFetchImage = async () => {
@@ -16,7 +17,7 @@ const SatelliteImage = () => {
       setImageUrl(null); // Clear previous image
       setIsLoading(true); // Set loading state
 
-      const response = await fetch(`/api/fetch-image?lat=${latitude}&lon=${longitude}&date=${date}`);
+      const response = await fetch(`/api/fetch-image?lat=${latitude}&lon=${longitude}&date=${date}&dim=${dim}`);
 
       if (!response.ok) {
         const errorText = await response.text();
@@ -63,6 +64,16 @@ const SatelliteImage = () => {
             value={date} 
             onChange={(e) => setDate(e.target.value)} 
             className="px-2 py-1 border border-gray-300 rounded-md text-white"
+          />
+        </label>
+        <label className="flex flex-col">
+          Dimension (degrees):
+          <input 
+            type="number" 
+            step="0.01"
+            value={dim} 
+            onChange={(e) => setDim(e.target.value)} 
+            className="px-2 py-1 border border-gray-300 rounded-md text-white w-32"
           />
         </label>
         <button 
