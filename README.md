@@ -2,7 +2,11 @@
 
 This is a Next.js application that fetches and displays satellite images from NASA's Earth API based on user-provided coordinates and date. Future plans include integrating data from additional open-source satellite imagery providers. Your feedback and contributions are welcome!
 
-![Example Satellite Image](screenshots/example.png)
+![Example Satellite Image 1](screenshots/example.png)
+
+This application allows you to specify the longitude, latitude, and date for the satellite image you want to retrieve. You can also control the geographical area covered by the image using the "Dimension (degrees)" input field. A smaller dimension value provides a closer view, while a larger value shows a wider area.
+
+![Example Satellite Image 2](screenshots/example2.png)
 
 ## Features Implemented:
 
