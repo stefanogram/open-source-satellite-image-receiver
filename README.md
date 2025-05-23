@@ -168,7 +168,7 @@ MIT License — see [LICENSE](LICENSE) for details. Open for use, modification, 
 
 ## Future Planning: Drone Integration & Real-Time Operations
 
-We are planning to take Satellite Intelligence Explorer to the next level by integrating advanced drone connectivity and real-time operations. Here's what's coming soon:
+Planning to take Satellite Intelligence Explorer to the next level by integrating advanced drone connectivity and real-time operations. Here's what's coming soon:
 
 - **DJI Drone Integration:**
   - Seamless connection to DJI drones using the DJI Mobile SDK.
