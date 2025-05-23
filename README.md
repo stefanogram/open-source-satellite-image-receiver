@@ -24,9 +24,6 @@ A modern, production-ready Next.js application for exploring, analyzing, and dow
 - **Robust Error Handling:**
   - If a requested date is unavailable, the UI lists available dates/scenes (±7 days) as clickable chips.
   - Always displays the actual image date from the API, not just the requested date.
-- **Branding & Favicon:**
-  - Custom SVG/ICO satellite favicon for full browser compatibility.
-  - Catchy, tech-focused app title and subtitle.
 - **Security & Production Readiness:**
   - API keys and credentials are never exposed to the client.
   - All sensitive operations are handled server-side.
