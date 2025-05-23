@@ -24,9 +24,7 @@ A modern, production-ready Next.js application for exploring, analyzing, and dow
 - **Robust Error Handling:**
   - If a requested date is unavailable, the UI lists available dates/scenes (±7 days) as clickable chips.
   - Always displays the actual image date from the API, not just the requested date.
-- **Branding & Favicon:**
-  - Custom SVG/ICO satellite favicon for full browser compatibility.
-  - Catchy, tech-focused app title and subtitle.
+
 - **Security & Production Readiness:**
   - API keys and credentials are never exposed to the client.
   - All sensitive operations are handled server-side.
@@ -79,8 +77,8 @@ NASA_API_KEY=your_nasa_api_key_here
 COPERNICUS_CLIENT_ID=your_copernicus_client_id_here
 COPERNICUS_CLIENT_SECRET=your_copernicus_client_secret_here
 ```
-- **NASA API Key:** [Get one here](https://api.nasa.gov/)
-- **Copernicus Credentials:** [Register here](https://dataspace.copernicus.eu/)
+- **NASA API Key:** [Get an API key for NASA here](https://api.nasa.gov/)
+- **Copernicus Credentials:** [Register for Dataspade api here](https://dataspace.copernicus.eu/)
 
 ### 4. Run the development server
 ```bash
@@ -167,3 +165,25 @@ MIT License — see [LICENSE](LICENSE) for details. Open for use, modification, 
 ---
 
 **Satellite Intelligence Explorer** — Explore, analyze, and unlock insights from real-time NASA & Copernicus satellite imagery. Earth observation, reimagined.
+
+## Future Planning: Drone Integration & Real-Time Operations
+
+We are planning to take Satellite Intelligence Explorer to the next level by integrating advanced drone connectivity and real-time operations. Here's what's coming soon:
+
+- **DJI Drone Integration:**
+  - Seamless connection to DJI drones using the DJI Mobile SDK.
+  - Unified interface for both satellite and aerial imagery.
+- **Live Video Streaming:**
+  - Access and display real-time video feeds directly from the drone's camera within the app.
+  - Support for robust video streaming protocols for low-latency, high-quality viewing.
+- **Image Capture & Download:**
+  - Trigger photo capture remotely from the app.
+  - Instantly download and analyze images from the drone's camera.
+- **Command & Control:**
+  - Programmatically control drone flight: takeoff, landing, waypoints, and more.
+  - Intuitive map-based flight planning and execution.
+- **Telemetry & Flight Data:**
+  - Access real-time telemetry: GPS position, altitude, speed, battery status, and more.
+  - Display and log all critical flight information for safety and analysis.
+
+**Our vision:** To create a unified platform for earth observation—combining the power of satellites and drones for research, rapid response, and discovery. Stay tuned for these exciting features!
