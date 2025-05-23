@@ -1,6 +1,6 @@
 # Satellite Intelligence Explorer
 
-A modern, production-ready Next.js application for exploring, analyzing, and downloading high-resolution satellite imagery from NASA, Copernicus, and NASA GIBS. Designed for researchers, educators, emergency responders, and enthusiasts, this app provides a seamless, interactive map interface with robust logging, advanced filtering, and a beautiful, responsive UI.
+A modern, production-ready Next.js application for exploring, analyzing, and downloading high-resolution satellite imagery from NASA, Copernicus, and NASA GIBS. Designed for researchers, educators, emergency responders, and enthusiasts, this app provides a seamless, interactive map interface with robust logging, advanced filtering, and a modern, responsive UI.
 
 ![Example Satellite Image 1](screenshots/example.png)
 
@@ -127,6 +127,38 @@ npm start
 - Deploy on [Vercel](https://vercel.com/) or any Node.js server.
 - Ensure all environment variables are set in your deployment environment.
 - For production, use `npm run build` and `npm start`.
+
+## Docker
+
+You can run this app in a Docker container for easy deployment anywhere.
+
+### 1. Build the Docker image
+```bash
+docker build -t satellite-intelligence-explorer .
+```
+
+### 2. Run the container
+```bash
+docker run -p 3000:3000 \
+  -e NASA_API_KEY=your_nasa_api_key_here \
+  -e COPERNICUS_CLIENT_ID=your_copernicus_client_id_here \
+  -e COPERNICUS_CLIENT_SECRET=your_copernicus_client_secret_here \
+  satellite-intelligence-explorer
+```
+
+### 3. Example Dockerfile
+```Dockerfile
+# Use official Node.js image
+FROM node:20-alpine
+WORKDIR /app
+COPY . .
+RUN npm install && npm run build
+EXPOSE 3000
+CMD ["npm", "start"]
+```
+
+- Make sure to set all required environment variables (`NASA_API_KEY`, `COPERNICUS_CLIENT_ID`, `COPERNICUS_CLIENT_SECRET`) when running the container.
+- You can also use a `.env` file with Docker Compose for local development.
 
 ## License
 
