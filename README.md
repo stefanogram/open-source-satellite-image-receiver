@@ -24,7 +24,10 @@ A modern, production-ready Next.js application for exploring, analyzing, and dow
 - **Robust Error Handling:**
   - If a requested date is unavailable, the UI lists available dates/scenes (±7 days) as clickable chips.
   - Always displays the actual image date from the API, not just the requested date.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 91d43eb31531f748c05f509500a8e419fb4b7c0d
 - **Security & Production Readiness:**
   - API keys and credentials are never exposed to the client.
   - All sensitive operations are handled server-side.
@@ -165,6 +168,7 @@ MIT License — see [LICENSE](LICENSE) for details. Open for use, modification, 
 ---
 
 **Satellite Intelligence Explorer** — Explore, analyze, and unlock insights from real-time NASA & Copernicus satellite imagery. Earth observation, reimagined.
+<<<<<<< HEAD
 
 ## Future Planning: Drone Integration & Real-Time Operations
 
@@ -187,3 +191,5 @@ We are planning to take Satellite Intelligence Explorer to the next level by int
   - Display and log all critical flight information for safety and analysis.
 
 **Our vision:** To create a unified platform for earth observation—combining the power of satellites and drones for research, rapid response, and discovery. Stay tuned for these exciting features!
+=======
+>>>>>>> 91d43eb31531f748c05f509500a8e419fb4b7c0d
