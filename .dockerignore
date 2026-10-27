@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+build
+.git
+.gitignore
+.env*
+!.env.example
+logs
+*.log
+screenshots
+.DS_Store
